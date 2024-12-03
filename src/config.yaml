@@ -1,31 +1,53 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Creative Delegates
+  site: 'https://creativedelegates.vercel.app'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  # googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Creative Delegates
+    template: '%s — Creative Delegates'
+  description: "🚀 Suitable for Startups, Small Business, SaaS Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Creative Delegates
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
+        alt: 'Creative Delegates default image' # Alt text for accessibility
     type: website
   twitter:
     handle: '@onwidget'
     site: '@onwidget'
     cardType: summary_large_image
+
+  structuredData:
+    organization:
+      "@context": "https://schema.org"
+      "@type": "Organization"
+      name: "Creative Delegates"
+      url: "https://creativedelegates.vercel.app"
+      logo: "~/assets/images/default.png"
+      sameAs:
+        - "https://twitter.com/onwidget"
+        - "https://facebook.com/yourpage"
+        - "https://linkedin.com/in/yourpage"
+    website:
+      "@context": "https://schema.org"
+      "@type": "WebSite"
+      name: "Creative Delegates"
+      url: "https://creativedelegates.vercel.app"
+      potentialAction:
+        - "@type": "SearchAction"
+          target: "https://creativedelegates.vercel.app/search?q={search_term_string}"
+          "query-input": "required name=search_term_string"
 
 i18n:
   language: en
@@ -41,22 +63,49 @@ apps:
       permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
+      metadata:
+        structuredData:
+          "@context": "https://schema.org"
+          "@type": "BlogPosting"
+          mainEntityOfPage:
+            "@type": "WebPage"
+            "@id": "https://creativedelegates.vercel.app/blog"
+          headline: "Post Title Here" # Replace dynamically
+          description: "Post description here" # Replace dynamically
+          image:
+            - "@type": "ImageObject"
+              url: "https://creativedelegates.vercel.app/assets/images/blog-default.png"
+              width: 1200
+              height: 628
+          datePublished: "2024-12-04T08:00:00+00:00" # Replace dynamically
+          dateModified: "2024-12-04T08:00:00+00:00" # Replace dynamically
+          author:
+            "@type": "Person"
+            name: "Author Name" # Replace dynamically
+          publisher:
+            "@type": "Organization"
+            name: "Creative Delegates"
+            logo:
+              "@type": "ImageObject"
+              url: "https://creativedelegates.vercel.app/assets/images/logo.png"
+              width: 200
+              height: 200
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
 
@@ -66,7 +115,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: "G-XXXXXXXXXX" # Replace with your Google Analytics ID
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

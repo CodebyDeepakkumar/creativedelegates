@@ -7,13 +7,13 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
+// import Testimonials from '~/components/widgets/Testimonials.astro';
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Creative Delegates - Fear of Wasting a \'Once-in-a-Lifetime\' Opportunity? Not Anymore. We Turn Visions into Websites, Seamlessly.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,18 +25,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Call Now',
+        href: 'tel:+91-8122484824',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:phone-done',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#about-me' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/creative-delegates-hero.png', alt: 'Creative Delegates client discussion' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Your Vision, 
+ <span>Transformed into</span>
+      <span class="text-accent dark:text-white highlight">Stunning </span>SEO Websites
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -44,9 +45,7 @@ const metadata = {
         <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
         + Tailwind CSS.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Empowering Businesses with Websites That Deliver Results, Inspire Confidence, and Build Trust.
     </Fragment>
   </Hero>
 
@@ -57,71 +56,72 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    id="about-me"
+    tagline="Why Choose Me 🏋️‍♀️"
+    title="Delivering Excellence, Reliability, and Results for Your Digital Journey"
+    subtitle="As a Fortune 500 software developer, I bring expertise, precision, and a commitment to excellence. I simplify starting or transitioning your business online by crafting websites that align with your vision and goals."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Expertise That You Can Trust',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Fortune 500 experience combined with deep SEO and web design expertise to create impactful websites tailored to your needs.',
+        icon: 'tabler:award',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Reliability at Every Step',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Transparent communication, clear timelines, and post-delivery support to ensure your website runs smoothly long-term.',
+        icon: 'tabler:lock-heart',
       },
       {
-        title: 'Best Practices',
+        title: 'Results-Driven Approach',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'SEO strategies focused on driving meaningful traffic and creating websites that load fast and keep visitors engaged.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Collaborative Partnership',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'I take the time to understand your vision, designing websites aligned with your audience and business goals.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Future-Proof Solutions',
+        description:
+          'Websites built with scalability in mind, ready to handle growth, traffic spikes, and evolving trends seamlessly.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
+  title: 'Tailored Solutions for Your Business',
+  description:
+    'I craft custom solutions such as iconography and with colors that resonate with your brand identity and goals.',
+  icon: 'tabler:adjustments',
+}
     ]}
+    
   />
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="How Do I Serve 💪🏻"
+    title="Entrepreneurs, growing businesses and established brands!"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Step-by-step onboarding process',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'A process to eliminate decision fatigue and help you clarify your goals.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'collaborative design experience',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'A collaboration where your enthusiasm is mirrored in every aspect of your website.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'blending stunning visuals',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'An emphasis on SEO mechanics, ensuring your site looks great and ranks well.',
       },
     ]}
     image={{
@@ -130,8 +130,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Challenges For New Entrepreneurs 😤</h3>
+      I understand the overwhelm of choices, fear of wasting a unique opportunity, and the concern that a poorly designed website could hurt your success.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,23 +145,18 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Custom strategies',
+        description: `strategies that respect your offline success while amplifying your online reach.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Technical simplicity',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Seamless integration with existing systems, like CRMs and booking tools.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Future-proof website',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          "Optimized website for scalability and sustainable growth.Transition online without compromising your legacy.",
       },
     ]}
     image={{
@@ -169,11 +164,14 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Challenges For D2C Brands 😤</h3>
+    I understand the concerns about losing local identity, integrating SEO with your offline reputation, and the uncertainty around website integrations and outcomes.
+  </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
@@ -183,23 +181,19 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Precision and professionalism',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'A focus on precision and professionalism, capturing your industry authority through whitepapers, case studies, and blogs.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Conversion-driven design',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Tailored Call to Action, optimized sales funnels, and lead capture integrations with your CRM.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Rigorous testing and uptime assurance',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+          'Website that safeguards your reputation during critical negotiations. Elevate your business with a website that reflects your expertise and drives results.',
       },
     ]}
     image={{
@@ -207,53 +201,58 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Challenges For B2B Businesses 😤</h3>
+    I understand the concerns about losing local identity, integrating SEO with your offline reputation, and the uncertainty around website integrations and outcomes.
+  </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
   </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+  title="Why My Approach Works?"
+  items={[
+    {
+      title: 'Step 1: <span class="font-medium">Simplified Communication</span>',
+      description:
+        "I ensure clear, jargon-free communication throughout the process, so you're never left in the dark. You’ll always understand what’s happening and feel confident making decisions.",
+      icon: 'tabler:message',
+    },
+    {
+      title: 'Step 2: <span class="font-medium">Strategic, Growth-Driven Design</span>',
+      description:
+        "Your website is more than just a digital presence—it's a tool to drive your business forward. I focus on creating designs that not only look great but are also built to help you achieve your business goals.",
+      icon: 'tabler:layout',
+    },
+    {
+      title: 'Step 3: <span class="font-medium">Reliable, Scalable Solutions</span>',
+      description:
+        "I deliver high-quality websites on time, every time, and ensure they are scalable. Your website will grow with your business, adapting to new needs and trends to stay relevant and effective in the long term.",
+      icon: 'tabler:server',
+    },
+    {
+      title: 'Ready!',
+      icon: 'tabler:check',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+    alt: 'Steps image',
+  }}
+/>
+
+<!-- Testimonials-widget ************** -->
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Interactive Blocks to Build Your Website"
+    subtitle="Enriching high-quality customisation and best SEO practices"
+    tagline="Building Blocks"
     items={[
       {
         title: 'Headers',
@@ -314,13 +313,13 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!-- <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
@@ -380,19 +379,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Call Now',
+        href: 'tel:+91-8122484824',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:phone',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Let's get &nbsp<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">in touch</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      Fear of Wasting a 'Once-in-a-Lifetime' Opportunity? <br class="hidden md:inline" />Don't !
       waste more time! :P
     </Fragment>
   </CallToAction>
