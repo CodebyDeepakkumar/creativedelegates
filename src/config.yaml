@@ -11,7 +11,7 @@ metadata:
   title:
     default: Creative Delegates
     template: '%s — Creative Delegates'
-  description: "🚀 Suitable for Startups, Small Business, SaaS Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: '🚀 Suitable for Startups, Small Business, SaaS Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.'
   robots:
     index: true
     follow: true
@@ -30,24 +30,24 @@ metadata:
 
   structuredData:
     organization:
-      "@context": "https://schema.org"
-      "@type": "Organization"
-      name: "Creative Delegates"
-      url: "https://creativedelegates.vercel.app"
-      logo: "~/assets/images/default.png"
+      '@context': 'https://schema.org'
+      '@type': 'Organization'
+      name: 'Creative Delegates'
+      url: 'https://creativedelegates.vercel.app'
+      logo: '~/assets/images/default.png'
       sameAs:
-        - "https://twitter.com/onwidget"
-        - "https://facebook.com/yourpage"
-        - "https://linkedin.com/in/yourpage"
+        - 'https://twitter.com/onwidget'
+        - 'https://facebook.com/yourpage'
+        - 'https://linkedin.com/in/yourpage'
     website:
-      "@context": "https://schema.org"
-      "@type": "WebSite"
-      name: "Creative Delegates"
-      url: "https://creativedelegates.vercel.app"
+      '@context': 'https://schema.org'
+      '@type': 'WebSite'
+      name: 'Creative Delegates'
+      url: 'https://creativedelegates.vercel.app'
       potentialAction:
-        - "@type": "SearchAction"
-          target: "https://creativedelegates.vercel.app/search?q={search_term_string}"
-          "query-input": "required name=search_term_string"
+        - '@type': 'SearchAction'
+          target: 'https://creativedelegates.vercel.app/search?q={search_term_string}'
+          'query-input': 'required name=search_term_string'
 
 i18n:
   language: en
@@ -65,29 +65,29 @@ apps:
         index: true
       metadata:
         structuredData:
-          "@context": "https://schema.org"
-          "@type": "BlogPosting"
+          '@context': 'https://schema.org'
+          '@type': 'BlogPosting'
           mainEntityOfPage:
-            "@type": "WebPage"
-            "@id": "https://creativedelegates.vercel.app/blog"
-          headline: "Post Title Here" # Replace dynamically
-          description: "Post description here" # Replace dynamically
+            '@type': 'WebPage'
+            '@id': 'https://creativedelegates.vercel.app/blog'
+          headline: 'Post Title Here' # Replace dynamically
+          description: 'Post description here' # Replace dynamically
           image:
-            - "@type": "ImageObject"
-              url: "https://creativedelegates.vercel.app/assets/images/blog-default.png"
+            - '@type': 'ImageObject'
+              url: 'https://creativedelegates.vercel.app/assets/images/blog-default.png'
               width: 1200
               height: 628
-          datePublished: "2024-12-04T08:00:00+00:00" # Replace dynamically
-          dateModified: "2024-12-04T08:00:00+00:00" # Replace dynamically
+          datePublished: '2024-12-04T08:00:00+00:00' # Replace dynamically
+          dateModified: '2024-12-04T08:00:00+00:00' # Replace dynamically
           author:
-            "@type": "Person"
-            name: "Author Name" # Replace dynamically
+            '@type': 'Person'
+            name: 'Author Name' # Replace dynamically
           publisher:
-            "@type": "Organization"
-            name: "Creative Delegates"
+            '@type': 'Organization'
+            name: 'Creative Delegates'
             logo:
-              "@type": "ImageObject"
-              url: "https://creativedelegates.vercel.app/assets/images/logo.png"
+              '@type': 'ImageObject'
+              url: 'https://creativedelegates.vercel.app/assets/images/logo.png'
               width: 200
               height: 200
 
@@ -115,7 +115,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-XXXXXXXXXX" # Replace with your Google Analytics ID
+      id: 'G-XXXXXXXXXX' # Replace with your Google Analytics ID
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
