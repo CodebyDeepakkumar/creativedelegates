@@ -110,6 +110,8 @@ export interface Headline {
   subtitle?: string;
   tagline?: string;
   classes?: Record<string, string>;
+  imageSrc?: string;  // Optional image source
+  linkedinUrl?: string;  // Optional LinkedIn URL
 }
 
 interface TeamMember {

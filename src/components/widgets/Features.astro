@@ -17,11 +17,20 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render('bg'),
+  imageSrc = '',  // Optional image for the Headline
+  linkedinUrl = '',  // Optional LinkedIn URL
 } = Astro.props;
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    imageSrc={imageSrc}
+    linkedinUrl={linkedinUrl}
+    classes={classes?.headline as Record<string, string>}
+  />
   <ItemGrid
     items={items}
     columns={columns}

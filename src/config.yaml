@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Creative Delegates
     images:
-      - url: '~/assets/images/default.png'
+      - url: ''
         width: 1200
         height: 628
         alt: 'Creative Delegates default image' # Alt text for accessibility
@@ -34,7 +34,7 @@ metadata:
       '@type': 'Organization'
       name: 'Creative Delegates'
       url: 'https://creativedelegates.vercel.app'
-      logo: '~/assets/images/default.png'
+      logo: ''
       sameAs:
         - 'https://twitter.com/onwidget'
         - 'https://facebook.com/yourpage'
